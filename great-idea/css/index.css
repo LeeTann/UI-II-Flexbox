@@ -52,15 +52,170 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html, body, a {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+h1, h2, h3, h4, h5, {
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	position: relative;
+	/* border: 1px solid red; */
+}
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	align-items: center;
+	/* border: 1px solid green; */
+}
+
+.container header .main-nav{
+	display: flex;
+	justify-content: space-evenly;
+	/* border: 1px solid blue; */
+}
+
+.container .main-nav a{
+	padding: 25px;
+	}
+
+.main-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 30px;
+	/* border: 1px solid yellow; */
+}
+.main-section div{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	/* border: 1px solid blue; */
+}
+
+.main-section .innovation{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	
+}
+
+.main-section .innovation button {
+	background-color: white;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 24px;
+	width: 150px;
+}
+
+.section2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.section3 {
+	display: flex;
+	justify-content: space-between;
+}
+
+hr {
+    display: block;
+	border-top: 1px solid black;
+	margin: 30px 0;
+}
+
+footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.container .services-header-img {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	/* border: 10px solid yellow; */
+}
+
+ .services-main h1 {
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+
+.services-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 1px solid yellow; */
+	flex-wrap: wrap;
+}
+
+.services-block div {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	border: 1px solid black;
+	background-color: lightgrey;
+	width: 48%;
+	padding: 15px;
+	margin: 15px 0;
+}
+
+h3 {
+	font-size: 1.55em;
+	padding-bottom: 15px;
+}
+button {
+	display: flex;
+	background-color: white;
+	border-radius: 10%;
+	width: 100px;
+	margin-top: 10px;
+}
+
+.services-bottom {
+	display: flex;
+	justify-content: space-between;
+	/* border: 1px solid red; */
+}
+
+.services-bottom div {
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid blue; */
+	width: 48%;
+}
+
+ul {
+	list-style-type: square;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+li {
+	margin-bottom: 15px;
+}

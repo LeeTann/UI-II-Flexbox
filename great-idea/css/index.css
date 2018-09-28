@@ -219,3 +219,41 @@ ul {
 li {
 	margin-bottom: 15px;
 }
+
+.about-main {
+	display: flex;
+	background-color: rgb(252, 255, 224);
+}
+
+.about-main div {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 50%;
+	padding: 15px;
+	margin: 15px 0;
+}
+
+.about-header-img {
+	display: block;
+	width: 100%;
+}
+
+.about-main h1{
+	font-size: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Media Queries */
+
+@media(max-width:500px) {
+	.container {
+		background-color: paleturquoise;
+		width: 100%;
+	}
+	.main-nav {
+		width: 100%;
+		flex-basis: column;
+	}
+}
